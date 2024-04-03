@@ -20,7 +20,6 @@ def emotion_detector(text_to_analyse):
         if value == max(score_list):
             global dominant_emotion
             dominant_emotion = key
-            print(key)
             break
 
     return {
@@ -30,4 +29,4 @@ def emotion_detector(text_to_analyse):
         'joy' : joy_score,
         'sadness': sadness_score,
         'dominant_emotion': dominant_emotion
-    }
+        }
